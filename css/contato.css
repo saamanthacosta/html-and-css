@@ -54,6 +54,10 @@ form input:invalid:focus {
     border-color: rgba(172, 0, 0, 0.5);
 }
 
+select {
+    width: 40%;
+}
+
 table {
     margin: 20px 0 40px 0;
 }
@@ -75,8 +79,29 @@ td, th {
         width: auto;
     }
 
-    form label, form input {
-        width: 100%;
-        margin-left: 3px;
+    form label, form input[type="text"], form input[type="email"], textarea, legend {
+        width: 80%;
+        margin: 5px;
+    }
+
+    form input[type="radio"], form input[type="checkbox"] {
+        width: auto;
+        margin: 3px;
+    }
+
+    form input[type="submit"] {
+        margin: 0 auto;
+    }
+
+    form input[type="radio"] {
+        margin-bottom: 10px;
+    }
+
+    select {
+        margin: 3px 0 10px 5px;
+    }
+
+    table {
+        margin: 20px auto;
     }
 }
